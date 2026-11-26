@@ -38,6 +38,8 @@
       get('ios-caption').textContent = 'Download on the';
       get('ios-status').textContent = 'Available';
       get('ios-store-caption').textContent = 'iOS · Available now';
+      const bottomStatus = get('ios-bottom-status');
+      if (bottomStatus) bottomStatus.textContent = 'Download for iOS';
       get('ios-dot').classList.remove('pending');
       get('availability').textContent = 'Get SautiLink from official stores for Android and iOS.';
       link.setAttribute('aria-label','Download SautiLink on the App Store');
